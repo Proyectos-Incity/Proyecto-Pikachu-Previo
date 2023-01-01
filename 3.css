@@ -22,10 +22,10 @@ h1 {
 
 path {
     cursor: pointer;
-    stroke: rgb(128, 0, 55);
+    stroke: black;
     stroke-width: 1px;
     stroke-linejoin: round;
-    fill: greenyellow;
+    fill: white;
 }
 
 .selected {
