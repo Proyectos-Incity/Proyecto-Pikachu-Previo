@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+nav,
+footer {
+    width: 100%;
+    padding: 0.5%;
+    background-color: rgba(201, 200, 200, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    background-color: rgba(245, 245, 245, 0.555);
+    padding: 3%;
+}
+
+#mc01, #mc02, #mc03 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 1%;
+    box-shadow: 0 3px 10px rgb(201 200 200);
+    border-radius: 3%;
+}

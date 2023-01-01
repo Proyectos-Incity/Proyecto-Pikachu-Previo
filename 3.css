@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.pikachu {
+    width: 100%;
+    display: flex;
+
+}
+
+path {
+    cursor: pointer;
+    stroke: rgb(128, 0, 55);
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    fill: greenyellow;
+}
+
+.selected {
+    fill: green;
+    stroke: black;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+}
+
+.previous-colors {
+    display: flex;
+    height: 30px;
+}
+
+.prev-color {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+nav,
+footer {
+    width: 100%;
+    padding: 0.5%;
+    background-color: rgba(201, 200, 200, 0.555);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.section1 {
+    display: grid;
+    grid-template: 1fr / 3fr 1fr;
+    gap: 3%;
+    background-color: rgba(245, 245, 245, 0.555);
+    padding: 3%;
+}
+
+.section0{
+    background-color: rgba(245, 245, 245, 0.555);
+    padding: 3%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+}
+
+.colores {
+    padding: 10%;
+    box-shadow: 0 3px 10px rgb(201 200 200);
+    border-radius: 3%;
+}
+
+/* Boton DESHACER */
+.undo {
+    padding: 5% 10%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: lightcoral;
+    color: white;
+    border: solid 1px lightcoral;
+}
+
+/* Boton DESCARGA */
+.download {
+    padding: 5% 10%;
+    margin-top: 5%;
+    border-radius: 7px;
+    background-color: white;
+    color: lightcoral;
+    border: solid 1px lightcoral;
+}
+
+
+#Capa_1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 10%;
+    box-shadow: 0 3px 10px rgb(201 200 200);
+    border-radius: 3%;
+
+}
+
+/* Botones de colores */
+.botoncolor {    
+    border: none;    
+    padding: 10%;
+    text-align: center;
+    text-decoration: none;    
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 2%;
+}
+
+#rojo {
+    background-color: red;
+}
+
+#naranja {
+    background-color: orange;
+}
+
+#amarillo {
+    background-color: yellow;
+}
+
+#verde {
+    background-color: green;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#violeta {
+    background-color: violet;
+}
