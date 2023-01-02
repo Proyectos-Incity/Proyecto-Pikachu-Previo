@@ -18,7 +18,7 @@
 
 <body>
     <nav class="nav">
-        <img src="img/mcdonalds.png" alt="logo" style="width:5%;">
+        <a href="index.html"> <img src="img/mcdonalds.png" alt="logo" style="width:15%;"></a>
         <a href="">Productos</a>
         <a href="">Locales</a>
         <a href="">Familia</a>
@@ -394,30 +394,16 @@
 
         <aside class="aside">
             <div class="colores">
-                <label for="paint">Elige el color</label>
-                <input type="color" id="paint" name="paint" value="#FFFFFF">
+                <label for="paint" id="label1">Elige el color</label>
+                <input type="color" id="paint" name="paint" value="#FF0000">
+
                 <div class="previous-colors"></div>
 
-                <!-- Botones de colores -->
-                <button class="botoncolor" id="rojo"></button>
-                <button class="botoncolor" id="naranja"></button>
-                <button class="botoncolor" id="amarillo"></button>
-                <button class="botoncolor" id="verde"></button>
-                <button class="botoncolor" id="azul"></button>
-                <button class="botoncolor" id="violeta"></button>
-
-
-
-                <button class="undo">Deshacer</button>
-                <!-- <button class="download">Descargar</button> -->
-                <!-- <a href="" id="link" download="image.jpg">download</a> -->
-
-                <button id="downloadPNG">Download .png</button>
-                <button id="downloadSVG">Download .svg</button>
-
-                <!-- <button onclick="downloadPng()">download</button> -->
-
-
+                <!-- Botones -->
+                <div class="botones">
+                    <button class="undo">Deshacer</button>
+                    <button id="downloadSVG">Descarga</button>
+                </div>               
             </div>
         </aside>
 
@@ -428,21 +414,11 @@
     </footer>
 
 
-    <!-- <div class="pikachu">
-        <img src="img/Mc-02.svg"></img>
-    </div> -->
-
-
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
-    <script src="3.js"></script>
-
-    <script>
-    
-    
-    </script>
+    <script src="3.js"></script>  
 
 
 

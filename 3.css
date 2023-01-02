@@ -4,6 +4,7 @@
     font-family: "Roboto", Sans-serif;
     font-size: 16px;
     font-weight: 400;
+    
 
 }
 
@@ -11,7 +12,7 @@ h1 {
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
-    
+
 }
 
 .pikachu {
@@ -37,15 +38,19 @@ path {
 
 .previous-colors {
     display: flex;
-    height: 30px;
+    height: 5%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 2rem;
 }
 
 .prev-color {
-    height: 30px;
-    width: 30px;
+    height: 2rem;
+    width: 2rem;
     cursor: pointer;
+    margin: 3%;
 }
-
 
 nav,
 footer {
@@ -63,20 +68,22 @@ nav a {
 
 .section1 {
     display: grid;
-    grid-template: 1fr / 3fr 1fr;
-    gap: 3%;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 1%;
     background-color: rgba(245, 245, 245, 0.555);
-    padding: 3%;
+    padding: 1.5rem;
+    
 }
 
-.section0{
+.section0 {
     background-color: rgba(245, 245, 245, 0.555);
-    padding: 3%;
+    padding: 1%;
 }
 
 article {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 aside {
@@ -85,26 +92,40 @@ aside {
 }
 
 .colores {
-    padding: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 8%;
+    width: 80%;
     box-shadow: 0 3px 10px rgb(201 200 200);
     border-radius: 3%;
 }
 
+#paint {
+    margin-left: 2%;
+
+}
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Boton DESHACER */
 .undo {
-    padding: 5% 10%;
-    margin-top: 5%;
-    border-radius: 7px;
+    padding: 5%;
+    margin: 1rem;
+    border-radius: 1.5rem;
     background-color: lightcoral;
     color: white;
     border: solid 1px lightcoral;
 }
 
 /* Boton DESCARGA */
-.download {
-    padding: 5% 10%;
-    margin-top: 5%;
-    border-radius: 7px;
+#downloadSVG {
+    padding: 5%;
+    margin: 1rem;
+    border-radius: 1.5rem;
     background-color: white;
     color: lightcoral;
     border: solid 1px lightcoral;
@@ -114,44 +135,9 @@ aside {
 #Capa_1 {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    padding: 10%;
+    width: 50%;
+    padding: 1%;
     box-shadow: 0 3px 10px rgb(201 200 200);
     border-radius: 3%;
 
-}
-
-/* Botones de colores */
-.botoncolor {    
-    border: none;    
-    padding: 10%;
-    text-align: center;
-    text-decoration: none;    
-    cursor: pointer;
-    border-radius: 50%;
-    margin: 2%;
-}
-
-#rojo {
-    background-color: red;
-}
-
-#naranja {
-    background-color: orange;
-}
-
-#amarillo {
-    background-color: yellow;
-}
-
-#verde {
-    background-color: green;
-}
-
-#azul {
-    background-color: blue;
-}
-
-#violeta {
-    background-color: violet;
 }

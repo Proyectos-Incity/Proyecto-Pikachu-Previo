@@ -34,6 +34,7 @@ nav a {
     gap: 3%;
     background-color: rgba(245, 245, 245, 0.555);
     padding: 3%;
+    justify-content: center;
 }
 
 #mc01, #mc02, #mc03 {
@@ -42,5 +43,10 @@ nav a {
     margin-right: auto;    
     padding: 1%;
     box-shadow: 0 3px 10px rgb(201 200 200);
-    border-radius: 3%;
+    border-radius: 3%;    
+    transition: all 0.5s;
+}
+
+#mc01:hover, #mc02:hover, #mc03:hover {
+    transform: scale(1.02);
 }

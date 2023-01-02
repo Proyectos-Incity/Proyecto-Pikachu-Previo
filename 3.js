@@ -11,7 +11,7 @@ const download = document.querySelector(".download");
 
 paint.onchange = function () {
     chosenColor = colorPicker.value;
-    previousColors.innerHTML += `<div class="prev-color" style="background-color: ${chosenColor}"></div>`; //agrega el color en un cuadradito. Con el += se van agregando cuadraditos de colores (historial de colores seleccionados)
+    previousColors.innerHTML += `<div class="prev-color" style="background-color: ${chosenColor}", margin:2%"></div>`; //agrega el color en un cuadradito. Con el += se van agregando cuadraditos de colores (historial de colores seleccionados)
 }
 
 //Para poder elegir el color previo (cuadraditos)
@@ -42,85 +42,7 @@ undo.onclick = function () {
 
 }
 
-//Descargar jpg (INTENTO 1)
-// const svg = document.getElementById('Capa_1');
-// const {x, y, width, height} = svg.viewBox.baseVal;
-// const blob = new Blob([svg.outerHTML], {type: 'image/svg+xml'});
-// const url = URL.createObjetcURL(blob);
-// const image = document.createElement('img');
-// image.src = url;
-// image.addEventListener('load', () => {
-//     const canvas = document.createElement('canvas');
-//     canvas.width = width;
-//     canvas.height = height;
-//     const context = canvas.getContext('2d');
-//     context.drawImage(image, x, y, width, height);
-//     const link = canvas.toDataURL();
-//     URL.revokeObjectURL(url);
-// })
-
-//Descargar jpg (INTENTO 2)
-
-//Se crea un elemento <a> con href y lo clickea
-// function download(href, name) {
-//     var a = document.createElement('a');
-
-//     a.download = name;
-//     a.href = href;
-
-//     document.body.appendChild(a);
-//     a.click();
-//     document.body.removeChild(a);
-// }
-// //Descrgar inline SVG
-// download(window.URL.createObjectURL(new Blob(['code of inline SVG'], {type: 'image/svg'})), 'svg');
-
-//Convertir inline SVG a PNG y descargar
-// download.onclick = function downloadPNG() {
-//     // specify png with and height in pixels
-//     var png_width = 1024;
-//     var png_height = 768;
-
-//     var inline_svg = ''; // code of inline SVG
-
-//     var canvas = document.createElement("canvas"); // create <canvas> element
-//     // The 2D Context provides objects, methods, and properties to draw 
-//     // and manipulate graphics on a canvas drawing surface.
-//     var context = canvas.getContext("2d");
-
-//     // set canvas with and height equal to png with and height
-//     canvas.width = png_width;
-//     canvas.height = png_height;
-
-//     let image = new Image; // create <img> element
-//     image.onload = function () {
-//         // define fill (specify 'no-repeat' if you don't want it to repeat
-//         context.fillStyle = context.createPattern(image, 'repeat'); 
-//         // fill rectangle with defined fill
-//         context.fillRect(0, 0, canvas.width, canvas.height); 
-//         this.download(canvas.toDataURL("image/png"), 'example.png');
-//     }.bind(this);
-
-//     // btoa — binary string to ASCII (Base64-encoded)
-//     image.src = 'data:image/svg+xml;base64,' + btoa('inline svg'); 
-// }
-
-
-//Descargar jpg (INTENTO 3)
-// download.onclick = function svgDownloadSVG() {
-//     var svgInfo = $(svgObject).clone();
-//     console.clear()
-//     console.log(svgInfo)
-//     $(this).attr({
-//              href:"data:image/svg+xml;base64,"+svgInfo.toString(),
-//              download:'coloringBook.svg',
-//              target:"_blank"
-//      });
-//    }
-
-
-//Descargar PNG (INTENTO 4)
-
+//Descarga ed SVG
 function downloadSVGAsText() {
     const svg = document.querySelector('svg');
     const base64doc = btoa(unescape(encodeURIComponent(svg.outerHTML)));
@@ -166,6 +88,4 @@ const downloadSVG = document.querySelector('#downloadSVG');
 downloadSVG.addEventListener('click', downloadSVGAsText);
 const downloadPNG = document.querySelector('#downloadPNG');
 downloadPNG.addEventListener('click', downloadSVGAsPNG);
-
-//Intento 5
 
