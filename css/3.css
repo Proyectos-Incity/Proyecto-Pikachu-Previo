@@ -43,6 +43,7 @@ path {
     flex-wrap: wrap;
     gap: 2%;
     margin: 2rem;
+    
 }
 
 .prev-color {
@@ -50,6 +51,7 @@ path {
     width: 2rem;
     cursor: pointer;
     margin: 3%;
+    border-radius: 50%;
 }
 
 nav,
@@ -103,11 +105,13 @@ aside {
 
 #paint {
     margin-left: 2%;
+    cursor: pointer;
 
 }
 .botones {
     display: flex;
     justify-content: center;
+    transition: all 0.5s;    
 }
 
 
@@ -116,9 +120,10 @@ aside {
     padding: 5%;
     margin: 1rem;
     border-radius: 1.5rem;
-    background-color: lightcoral;
+    background-color: #fec208;
     color: white;
-    border: solid 1px lightcoral;
+    border: solid 1px #fec208;
+    cursor: pointer;
 }
 
 /* Boton DESCARGA */
@@ -126,9 +131,14 @@ aside {
     padding: 5%;
     margin: 1rem;
     border-radius: 1.5rem;
-    background-color: white;
-    color: lightcoral;
-    border: solid 1px lightcoral;
+    background-color: rgba(245, 245, 245, 0.555);
+    color: #fec208;
+    border: solid 1px #fec208;
+    cursor: pointer;
+}
+
+.undo:hover, #downloadSVG:hover {
+    transform: scale(1.02);
 }
 
 
