@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+form {
+    background: rgba(0,0,0,.3);
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  select, button {
+    width: fit-content;
+  }
+
+.btn-color {
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+  border: 1px solid black !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.picture-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.picture {
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid red;
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  padding: 10px;
+}
+
+.colors button {
+  margin: 5px;
+  border: 2px solid transparent;
+}
+
+.menu-draw {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-draw {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin: 5px;
+  background-color: grey;
+}
+
+.selected {
+  background-color: rgb(68, 68, 68);
+}
+
+.checked {
+  border: 2px solid black !important;
+}
+
+.paint {
+  position:absolute;
+  top: 50px;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  transform: translateX(110px);
+  transition: transform 1s;
+}
+
+.paint:hover {
+  transform: translateX(-0.1px);
+}
+
+.hidden {
+  height: fit-content;
+  width:fit-content;
+  display: flex;
+  align-self: center;
+}
+
+.hidden p {
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border: 2px solid red;
+  border-right: 0;
+  border-radius: 5px 0 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 2px 5px 0;
+  font-weight: bold;
+  background-color: grey;
+}
+
+
+.link {
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 300px;
+  border: 1px solid black;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.download {
+  position: absolute;
+  height: fit-content;
+  right: 300px;
+  bottom: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.clear {
+  position: absolute;
+  height: fit-content;
+  left: 300px;
+  bottom: 60px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear:hover {
+  background-color: rgb(194, 191, 191);
+}
