@@ -6,6 +6,9 @@
     font-weight: 400;
 
 }
+body {
+    background-image: url(../img/papel2.jpg);
+}
 
 h1 {
     font-size: 1.5em;

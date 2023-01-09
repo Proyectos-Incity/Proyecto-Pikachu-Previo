@@ -3,9 +3,11 @@
     color: #333;
     font-family: "Roboto", Sans-serif;
     font-size: 16px;
-    font-weight: 400;
-    
+    font-weight: 400;    
+}
 
+body {
+    background-image: url(../img/papel2.jpg);
 }
 
 h1 {
@@ -52,6 +54,14 @@ path {
     cursor: pointer;
     margin: 3%;
     border-radius: 50%;
+    box-shadow: 0 3px 10px rgb(201 200 200);
+    opacity: 0.5;
+}
+
+.prev-color:hover {
+    transform: scale(1.3);
+    transition: all 0.5s;
+    opacity: 1;
 }
 
 nav {
@@ -109,6 +119,7 @@ aside {
     width: 80%;
     box-shadow: 0 3px 10px rgb(201 200 200);
     border-radius: 3%;
+    background-color: white;
 }
 
 #paint {
