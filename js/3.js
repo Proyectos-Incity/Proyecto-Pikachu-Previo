@@ -14,7 +14,7 @@ paint.onchange = function () {
     previousColors.innerHTML += `<div class="prev-color" style="background-color: ${chosenColor}", margin:2%"></div>`; //agrega el color en un cuadradito. Con el += se van agregando cuadraditos de colores (historial de colores seleccionados)
 }
 
-//Para poder elegir el color previo (cuadraditos)
+//Para poder elegir el color previo (circulos)
 previousColors.onclick = function (event) {
     chosenColor = event.target.style.backgroundColor;
 }
