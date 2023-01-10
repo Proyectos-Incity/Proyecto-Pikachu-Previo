@@ -86,6 +86,6 @@ function downloadSVGAsPNG(e) {
 
 const downloadSVG = document.querySelector('#downloadSVG');
 downloadSVG.addEventListener('click', downloadSVGAsText);
-const downloadPNG = document.querySelector('#downloadPNG');
-downloadPNG.addEventListener('click', downloadSVGAsPNG);
+// const downloadPNG = document.querySelector('#downloadPNG');
+// downloadPNG.addEventListener('click', downloadSVGAsPNG);
 
