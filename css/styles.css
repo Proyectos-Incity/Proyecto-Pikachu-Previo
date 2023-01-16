@@ -81,13 +81,13 @@ nav a {
 
 /* Video portada */
 video {
-    width: 100vw;
-    object-fit: cover;
+    width: -webkit-fill-available;
+    
     clip-path: inset(6% 0% 6% 0%);
     /*recorte de bordes negros sup e inf*/
 
     position: relative;
-    top: 0;
+    top: -35px;
     
 }
 
