@@ -130,13 +130,16 @@ downloadSVG.addEventListener('click', downloadSVGAsText);
 // })
 
 function svgClear() {
-    $(svgColor).each(function(){
-      TweenMax.to(this, fillSpeed, { fill: "#FFF" });
+    $(svgColor).each(function () {
+        TweenMax.to(this, fillSpeed, {
+            fill: "#FFF"
+        });
     })
-  }
+}
 
-$.fn.btnClear     = function() {
+$.fn.btnClear = function () {
     btnClear = this
     $(btnClear).on('click', svgClear)
-    }
-  
+}
+( jQuery );
+$('#btnClear').btnClear()

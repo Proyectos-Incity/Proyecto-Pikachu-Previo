@@ -78,7 +78,7 @@ nav a {
 
 /* Video portada */
 video {
-    max-width: 100%;
+    width: 100vw;
     object-fit: cover;
     clip-path: inset(3% 0% 3% 0%); /*recorte de bordes negros sup e inf*/
 }
