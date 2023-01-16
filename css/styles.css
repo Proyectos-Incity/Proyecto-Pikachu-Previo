@@ -7,9 +7,9 @@
 
 }
 
-body {
+/* body {
     background-image: url(../img/papel2.jpg);
-}
+} */
 
 h1 {
     font-size: 1.5em;
@@ -21,7 +21,7 @@ h1 {
 nav {
     width: 100%;
     padding: 0.5%;
-    background-color: rgba(201, 200, 200, 0.555);
+    /* background-color: rgba(201, 200, 200, 0.555); */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -80,5 +80,17 @@ nav a {
 video {
     width: 100vw;
     object-fit: cover;
-    clip-path: inset(3% 0% 3% 0%); /*recorte de bordes negros sup e inf*/
+    clip-path: inset(3% 0% 3% 0%);
+    /*recorte de bordes negros sup e inf*/
 }
+
+.portada {
+    display: flex;
+    justify-content: center;
+}
+/* 
+.banners {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+} */
