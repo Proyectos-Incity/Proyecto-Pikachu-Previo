@@ -81,7 +81,7 @@ nav a {
 
 /* Video portada */
 video {
-    width: -webkit-fill-available;
+    width: 100%;
     
     clip-path: inset(6% 0% 6% 0%);
     /*recorte de bordes negros sup e inf*/
@@ -95,9 +95,9 @@ video {
     display: flex;
     justify-content: center;
 }
-/* 
+
 .banners {
     display: flex;
     justify-content: center;
     flex-direction: column;
-} */
+}
