@@ -7,9 +7,9 @@
 
 }
 
-/* body {
-    background-image: url(../img/papel2.jpg);
-} */
+body {
+    background-image: url(../img/papel3.jpg);
+}
 
 h1 {
     font-size: 1.5em;
@@ -19,9 +19,7 @@ h1 {
 }
 
 nav {
-    width: 100%;
-    padding: 0.5%;
-    /* background-color: rgba(201, 200, 200, 0.555); */
+    width: 100%;    
     display: flex;
     align-items: center;
     justify-content: space-around;
