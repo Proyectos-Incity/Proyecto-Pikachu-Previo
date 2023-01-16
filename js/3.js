@@ -4,6 +4,7 @@ let chosenColor = "#FFFFFFF";
 const paths = document.querySelectorAll("path");
 const undo = document.querySelector(".undo");
 let history = [];
+// const clear = document.querySelector(".clear");
 
 //constante download
 const download = document.querySelector(".download");
@@ -53,39 +54,89 @@ function downloadSVGAsText() {
     a.dispatchEvent(e);
 }
 
-function downloadSVGAsPNG(e) {
-    const canvas = document.createElement("canvas");
-    const svg = document.querySelector('svg');
-    const base64doc = btoa(unescape(encodeURIComponent(svg.outerHTML)));
-    const w = parseInt(svg.getAttribute('width'));
-    const h = parseInt(svg.getAttribute('height'));
-    const img_to_download = document.createElement('img');
-    img_to_download.src = 'data:image/svg+xml;base64,' + base64doc;
-    console.log(w, h);
-    img_to_download.onload = function () {
-        console.log('img loaded');
-        canvas.setAttribute('width', w);
-        canvas.setAttribute('height', h);
-        const context = canvas.getContext("2d");
-        //context.clearRect(0, 0, w, h);
-        context.drawImage(img_to_download, 0, 0, w, h);
-        const dataURL = canvas.toDataURL('image/png');
-        if (window.navigator.msSaveBlob) {
-            window.navigator.msSaveBlob(canvas.msToBlob(), "download.png");
-            e.preventDefault();
-        } else {
-            const a = document.createElement('a');
-            const my_evt = new MouseEvent('click');
-            a.download = 'download.png';
-            a.href = dataURL;
-            a.dispatchEvent(my_evt);
-        }
-        // canvas.parentNode.removeChild(canvas);
-    }
-}
+// function downloadSVGAsPNG(e) {
+//     const canvas = document.createElement("canvas");
+//     const svg = document.querySelector('svg');
+//     const base64doc = btoa(unescape(encodeURIComponent(svg.outerHTML)));
+//     const w = parseInt(svg.getAttribute('width'));
+//     const h = parseInt(svg.getAttribute('height'));
+//     const img_to_download = document.createElement('img');
+//     img_to_download.src = 'data:image/svg+xml;base64,' + base64doc;
+//     console.log(w, h);
+//     img_to_download.onload = function () {
+//         console.log('img loaded');
+//         canvas.setAttribute('width', w);
+//         canvas.setAttribute('height', h);
+//         const context = canvas.getContext("2d");
+//         //context.clearRect(0, 0, w, h);
+//         context.drawImage(img_to_download, 0, 0, w, h);
+//         const dataURL = canvas.toDataURL('image/png');
+//         if (window.navigator.msSaveBlob) {
+//             window.navigator.msSaveBlob(canvas.msToBlob(), "download.png");
+//             e.preventDefault();
+//         } else {
+//             const a = document.createElement('a');
+//             const my_evt = new MouseEvent('click');
+//             a.download = 'download.png';
+//             a.href = dataURL;
+//             a.dispatchEvent(my_evt);
+//         }
+//         // canvas.parentNode.removeChild(canvas);
+//     }
+// }
 
 const downloadSVG = document.querySelector('#downloadSVG');
 downloadSVG.addEventListener('click', downloadSVGAsText);
 // const downloadPNG = document.querySelector('#downloadPNG');
 // downloadPNG.addEventListener('click', downloadSVGAsPNG);
 
+//Boton RESET
+// let drawing = document.getElementById("Capa_1")
+// let svgDoc = drawing.contentDocument.getElementById('Capa_1')
+
+// let clear = document.querySelector('.clear')
+//     clear.addEventListener('click', (e) => {
+//         e.preventDefault()
+//         let test = svgDoc.querySelectorAll('#Color > path')
+//         test.forEach((element) => {
+//             if (e.target.parentNode.id != 'Black' && e.target.id != 'Capa_1'){
+//                 element.style.fill = '#fff'
+//             }
+//         })
+//     })
+
+
+// clear.onclick = function () {
+//     // history.splice(0, history.length);
+//     // history.length = 0;
+//     // console.log(history);
+//     let test = svgDoc.querySelectorAll('#Color > path')
+//     test.forEach((element) => {
+//         if (e.target.parentNode.id != 'Black' && e.target.id != 'Capa_1') {
+//             element.style.fill = '#fff'
+//         }
+//     })
+// }
+
+// let drawing = document.getElementById("Capa_1")
+// let svgDoc = drawing.contentDocument.getElementById('Capa_1')
+// let clear = document.querySelector('.clear')
+// clear.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     let test = svgDoc.querySelectorAll('#Color > path')
+//     test.forEach((element) => {
+//         element.style.fill = '#fff'
+//     })
+// })
+
+function svgClear() {
+    $(svgColor).each(function(){
+      TweenMax.to(this, fillSpeed, { fill: "#FFF" });
+    })
+  }
+
+$.fn.btnClear     = function() {
+    btnClear = this
+    $(btnClear).on('click', svgClear)
+    }
+  
