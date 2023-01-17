@@ -99,10 +99,12 @@ video {
 .portada {
     position: relative;
     top: 3em;
+    width: 100vw;
 }
 
 .banners {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100vw;
 }
