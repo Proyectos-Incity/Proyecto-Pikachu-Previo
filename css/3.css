@@ -164,6 +164,16 @@ aside {
     transition: all 0.5s;
 }
 
+.clear {
+    padding: 5%;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    background-color: rgba(245, 245, 245, 0.555);
+    color: #fec208;
+    border: solid 1px #fec208;
+    cursor: pointer;
+}
+
 
 #Capa_1 {
     margin-left: auto;
