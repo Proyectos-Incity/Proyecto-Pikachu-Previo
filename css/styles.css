@@ -25,9 +25,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background-color: white;
 
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 10;
+
+    box-shadow:  2px 4px 0 rgb(0 0 0 / 8%);
 }
 
 footer {
@@ -83,19 +87,18 @@ nav a {
 
 /* Video portada */
 video {
-    width: 100%;
-    
+    width: 100vw;    
     clip-path: inset(6% 0% 6% 0%);
     /*recorte de bordes negros sup e inf*/
 
-    position: relative;
-    top: -35px;
+    /* position: relative;
+    top: -35px; */
     
 }
 
 .portada {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top: 3em;
 }
 
 .banners {
