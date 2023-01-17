@@ -46,7 +46,7 @@ path {
     height: 2em;
     width: 2em;
     cursor: pointer;
-    margin: 3%;
+    margin: 5%;
     border-radius: 50%;
     box-shadow: 0 3px 10px rgb(201 200 200);
     opacity: 0.5;
@@ -80,52 +80,34 @@ nav a {
     text-decoration: none;
 }
 
-.section1 {
-    /* display: grid;
-    grid-template: 1fr / 2fr 1fr;
-    gap: 1%; */
+.section1 {   
     display: flex;
     flex-direction: row;
     width: 100%;
+    align-items: center;
+    justify-content: space-around;
 
 }
 
 
 .pikachu {
-    width: 100%; 
-    margin: 1%;
+    width: 65%; 
+    margin-top: 1%;
+    margin-left: 1%;
 
 }
-
-/* article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-/* #Capa_1 {
-    width: 90vw;
-    box-shadow: 0 3px 10px rgb(201 200 200);
-    border-radius: 3%;
-} */
-
-
-
-/* aside {
-    display: flex;
-    align-items: center;
-
-} */
 
 .colores {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5%;    
-    margin: 1%;
+    padding: 3%;    
+    margin: 1.5%;
     box-shadow: 0 3px 10px rgb(201 200 200);
-    border-radius: 3%;
+    border-radius: 5em;
     background-color: white;
+    width: 25%;
+    
 }
 
 #paint {
@@ -138,6 +120,7 @@ nav a {
     display: flex;
     justify-content: center;
     transition: all 0.5s;
+    width: fit-content;
 }
 
 
@@ -183,9 +166,6 @@ nav a {
 
 
 
-/* Nav w3schools */
-
-
 
 /* Para celular vertical */
 @media only screen and (max-width: 1023px) {
@@ -195,5 +175,19 @@ nav a {
         justify-content: center;
         width: 100%;
         
+    }
+
+    .colores {
+        width: 100%;
+        
+    }
+
+    .prev-color {
+        margin: 1em;
+    }
+
+    .pikachu {
+        width: 100%;
+
     }
 }
