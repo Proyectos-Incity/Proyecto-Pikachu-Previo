@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
     color: #333;
-    font-family: "Roboto", Sans-serif;
+    /* font-family: "Roboto", Sans-serif; */
+    font-family: "Speedee", arial, helvetica, sans-serif;
     font-size: 16px;
-    font-weight: 400;    
+    font-weight: 400;
 }
 
 body {
@@ -14,14 +15,8 @@ h1 {
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
-
 }
 
-.pikachu {
-    width: 100%;
-    display: flex;
-
-}
 
 path {
     cursor: pointer;
@@ -46,7 +41,7 @@ path {
     flex-wrap: wrap;
     gap: 2%;
     margin: auto;
-    
+
 }
 
 .prev-color {
@@ -88,37 +83,48 @@ nav a {
 }
 
 .section1 {
-    display: grid;
+    /* display: grid;
     grid-template: 1fr / 2fr 1fr;
-    gap: 1%;
-    background-color: rgba(245, 245, 245, 0.555);
-    padding: 1.5rem;
-    
+    gap: 1%; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
 }
 
-.section0 {
-    background-color: rgba(245, 245, 245, 0.555);
-    padding: 1%;
+
+.pikachu {
+    width: 100%; 
+    margin: auto;
+
 }
 
-article {
+/* article {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
 
-aside {
+/* #Capa_1 {
+    width: 90vw;
+    box-shadow: 0 3px 10px rgb(201 200 200);
+    border-radius: 3%;
+} */
+
+
+
+/* aside {
     display: flex;
     align-items: center;
-   
-}
+
+} */
 
 .colores {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 8%;
-    width: 80%;
+    padding: 5%;    
+    margin: auto;
     box-shadow: 0 3px 10px rgb(201 200 200);
     border-radius: 3%;
     background-color: white;
@@ -129,10 +135,11 @@ aside {
     cursor: pointer;
 
 }
+
 .botones {
     display: flex;
     justify-content: center;
-    transition: all 0.5s;    
+    transition: all 0.5s;
 }
 
 
@@ -156,10 +163,11 @@ aside {
     color: #fec208;
     border: solid 1px #fec208;
     cursor: pointer;
-    
+
 }
 
-.undo:hover, #downloadSVG:hover {
+.undo:hover,
+#downloadSVG:hover {
     transform: scale(1.1);
     transition: all 0.5s;
 }
@@ -175,35 +183,19 @@ aside {
 }
 
 
-#Capa_1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vh;
-    padding: 1%;
-    box-shadow: 0 3px 10px rgb(201 200 200);
-    border-radius: 3%;
-}
+
+
+/* Nav w3schools */
+
 
 
 /* Para celular vertical */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
     .section1 {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-    }
-
-    /* .colores {
-        width: 100%;
-        margin-top: 1vh;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-    } */
-
-    aside {
-        padding: inherit;
         width: 100%;
-        margin-top: 1vh;
-        justify-content: center;
+        
     }
-  }
+}

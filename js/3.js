@@ -4,6 +4,7 @@ let chosenColor = "#FFFFFFF";
 const paths = document.querySelectorAll("path");
 const undo = document.querySelector(".undo");
 let history = [];
+
 const download = document.querySelector(".download");
 
 
